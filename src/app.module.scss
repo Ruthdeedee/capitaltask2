@@ -1,0 +1,21 @@
+.layout {
+	display: flex;
+	:global {
+		.main {
+			flex: 1;
+			padding: 0 30px;
+			background-color: #f9faff;
+			.container {
+				display: flex;
+				gap: 40px;
+				.item {
+					padding: 20px 0;
+					flex: 1;
+					&.candidatesContainer {
+						flex: 2.5;
+					}
+				}
+			}
+		}
+	}
+}

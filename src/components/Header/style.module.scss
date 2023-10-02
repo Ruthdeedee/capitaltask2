@@ -1,0 +1,90 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	:global {
+		.left {
+			flex: 1;
+			.name {
+				color: #1d4ed8;
+			}
+		}
+		.meduim {
+			flex: 1;
+			.dropdownButton {
+				width: 100%;
+				padding: 20px 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border: none;
+				border-radius: 20px;
+				font-weight: 500;
+				color: #1d4ed8;
+			}
+		}
+		.right {
+			flex: 1.5;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 7px;
+			.iconButton {
+				border: none;
+			}
+			.videoInterviewButton {
+				height: fit-content;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border: none;
+				border-radius: 10px;
+				background-color: #1d5ecd;
+				.ant-typography {
+					padding: 10px 20px;
+					color: white;
+					border-right: 1px solid white;
+				}
+				img {
+					padding: 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+.browsingDropdown {
+	padding: 0 !important;
+	:global {
+		.ant-dropdown-menu-item {
+			border-radius: 0 !important;
+			border-bottom: 1px solid #ebebeb;
+			transition: all 0.3s ease;
+			&:hover {
+				color: #1d4ed8 !important;
+				background-color: #d1ddff !important;
+				.menuItem {
+					.ant-typography {
+						color: #1d4ed8 !important;
+					}
+					.ant-badge .ant-badge-count {
+						color: #1d4ed8 !important;
+						background-color: #b8cbfe !important;
+					}
+				}
+			}
+		}
+		.menuItem {
+			padding: 7px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.ant-badge .ant-badge-count {
+				color: black;
+				background-color: #f8f8f8;
+				box-shadow: none;
+			}
+		}
+	}
+}
